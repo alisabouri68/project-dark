@@ -1,225 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/output.css" />
     <title>dark</title>
-</head>
+  </head>
 
-<body class="overflow-x-hidden ">
+  <body class="overflow-x-hidden">
     <!----------------------------------------------svg-sprit---------------------------------------------->
     <svg class="hidden">
-        <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-        </symbol>
-        <symbol id="x-twitter" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-            clip-rule="evenodd" viewBox="0 0 512 509.64">
-            <rect width="512" height="509.64" rx="115.61" ry="115.61" />
-            <path fill="#fff" fill-rule="nonzero"
-                d="M323.74 148.35h36.12l-78.91 90.2 92.83 122.73h-72.69l-56.93-74.43-65.15 74.43h-36.14l84.4-96.47-89.05-116.46h74.53l51.46 68.04 59.53-68.04zm-12.68 191.31h20.02l-129.2-170.82H180.4l130.66 170.82z" />
-        </symbol>
-        <symbol id="facebook" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-            clip-rule="evenodd" viewBox="0 0 509 507.14">
-            <path fill-rule="nonzero"
-                d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z" />
-        </symbol>
-        <symbol id="instagram" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-            clip-rule="evenodd" viewBox="0 0 512 512">
-            <path fill-rule="nonzero"
-                d="M170.663 256.157c-.083-47.121 38.055-85.4 85.167-85.482 47.121-.092 85.407 38.029 85.499 85.159.091 47.13-38.047 85.4-85.176 85.492-47.112.09-85.399-38.039-85.49-85.169zm-46.108.092c.141 72.602 59.106 131.327 131.69 131.185 72.592-.14 131.35-59.089 131.209-131.691-.141-72.577-59.114-131.336-131.715-131.194-72.585.141-131.325 59.114-131.184 131.7zm237.104-137.092c.033 16.954 13.817 30.682 30.772 30.649 16.961-.034 30.689-13.811 30.664-30.765-.033-16.954-13.818-30.69-30.78-30.656-16.962.033-30.689 13.818-30.656 30.772zm-208.696 345.4c-24.958-1.086-38.511-5.234-47.543-8.709-11.961-4.628-20.496-10.177-29.479-19.093-8.966-8.951-14.532-17.461-19.202-29.397-3.508-9.033-7.73-22.569-8.9-47.527-1.269-26.983-1.559-35.078-1.683-103.433-.133-68.338.116-76.434 1.294-103.441 1.069-24.941 5.242-38.512 8.709-47.536 4.628-11.977 10.161-20.496 19.094-29.478 8.949-8.983 17.459-14.532 29.403-19.202 9.025-3.526 22.561-7.715 47.511-8.9 26.998-1.278 35.085-1.551 103.423-1.684 68.353-.133 76.448.108 103.456 1.294 24.94 1.086 38.51 5.217 47.527 8.709 11.968 4.628 20.503 10.145 29.478 19.094 8.974 8.95 14.54 17.443 19.21 29.413 3.524 8.999 7.714 22.552 8.892 47.494 1.285 26.998 1.576 35.094 1.7 103.432.132 68.355-.117 76.451-1.302 103.442-1.087 24.957-5.226 38.52-8.709 47.56-4.629 11.953-10.161 20.488-19.103 29.471-8.941 8.949-17.451 14.531-29.403 19.201-9.009 3.517-22.561 7.714-47.494 8.9-26.998 1.269-35.086 1.56-103.448 1.684-68.338.133-76.424-.124-103.431-1.294zM149.977 1.773c-27.239 1.286-45.843 5.648-62.101 12.019-16.829 6.561-31.095 15.353-45.286 29.603C28.381 57.653 19.655 71.944 13.144 88.79c-6.303 16.299-10.575 34.912-11.778 62.168C.172 178.264-.102 186.973.031 256.489c.133 69.508.439 78.234 1.741 105.548 1.302 27.231 5.649 45.827 12.019 62.092 6.569 16.83 15.353 31.089 29.611 45.289 14.25 14.2 28.55 22.918 45.404 29.438 16.282 6.294 34.902 10.583 62.15 11.777 27.305 1.203 36.022 1.468 105.521 1.336 69.532-.133 78.25-.44 105.555-1.734 27.239-1.302 45.826-5.664 62.1-12.019 16.829-6.585 31.095-15.353 45.288-29.611 14.191-14.251 22.917-28.55 29.428-45.404 6.304-16.282 10.592-34.904 11.777-62.134 1.195-27.323 1.478-36.049 1.344-105.557-.133-69.516-.447-78.225-1.741-105.522-1.294-27.256-5.657-45.844-12.019-62.118-6.577-16.829-15.352-31.08-29.602-45.288-14.25-14.192-28.55-22.935-45.404-29.429-16.29-6.304-34.903-10.6-62.15-11.778C333.747.164 325.03-.101 255.506.031c-69.507.133-78.224.431-105.529 1.742z" />
-        </symbol>
-        <symbol  id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 86.43">
-            <defs>
-                <style>
-                    .cls-1,
-                    .cls-2 {
-                        fill-rule: evenodd;
-                    }
+      <symbol
+        id="arrow-down"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </symbol>
+      <symbol
+        id="x-twitter"
+        xmlns="http://www.w3.org/2000/svg"
+        shape-rendering="geometricPrecision"
+        text-rendering="geometricPrecision"
+        image-rendering="optimizeQuality"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        viewBox="0 0 512 509.64"
+      >
+        <rect width="512" height="509.64" rx="115.61" ry="115.61" />
+        <path
+          fill="#fff"
+          fill-rule="nonzero"
+          d="M323.74 148.35h36.12l-78.91 90.2 92.83 122.73h-72.69l-56.93-74.43-65.15 74.43h-36.14l84.4-96.47-89.05-116.46h74.53l51.46 68.04 59.53-68.04zm-12.68 191.31h20.02l-129.2-170.82H180.4l130.66 170.82z"
+        />
+      </symbol>
+      <symbol
+        id="facebook"
+        xmlns="http://www.w3.org/2000/svg"
+        shape-rendering="geometricPrecision"
+        text-rendering="geometricPrecision"
+        image-rendering="optimizeQuality"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        viewBox="0 0 509 507.14"
+      >
+        <path
+          fill-rule="nonzero"
+          d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z"
+        />
+      </symbol>
+      <symbol
+        id="instagram"
+        xmlns="http://www.w3.org/2000/svg"
+        shape-rendering="geometricPrecision"
+        text-rendering="geometricPrecision"
+        image-rendering="optimizeQuality"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill-rule="nonzero"
+          d="M170.663 256.157c-.083-47.121 38.055-85.4 85.167-85.482 47.121-.092 85.407 38.029 85.499 85.159.091 47.13-38.047 85.4-85.176 85.492-47.112.09-85.399-38.039-85.49-85.169zm-46.108.092c.141 72.602 59.106 131.327 131.69 131.185 72.592-.14 131.35-59.089 131.209-131.691-.141-72.577-59.114-131.336-131.715-131.194-72.585.141-131.325 59.114-131.184 131.7zm237.104-137.092c.033 16.954 13.817 30.682 30.772 30.649 16.961-.034 30.689-13.811 30.664-30.765-.033-16.954-13.818-30.69-30.78-30.656-16.962.033-30.689 13.818-30.656 30.772zm-208.696 345.4c-24.958-1.086-38.511-5.234-47.543-8.709-11.961-4.628-20.496-10.177-29.479-19.093-8.966-8.951-14.532-17.461-19.202-29.397-3.508-9.033-7.73-22.569-8.9-47.527-1.269-26.983-1.559-35.078-1.683-103.433-.133-68.338.116-76.434 1.294-103.441 1.069-24.941 5.242-38.512 8.709-47.536 4.628-11.977 10.161-20.496 19.094-29.478 8.949-8.983 17.459-14.532 29.403-19.202 9.025-3.526 22.561-7.715 47.511-8.9 26.998-1.278 35.085-1.551 103.423-1.684 68.353-.133 76.448.108 103.456 1.294 24.94 1.086 38.51 5.217 47.527 8.709 11.968 4.628 20.503 10.145 29.478 19.094 8.974 8.95 14.54 17.443 19.21 29.413 3.524 8.999 7.714 22.552 8.892 47.494 1.285 26.998 1.576 35.094 1.7 103.432.132 68.355-.117 76.451-1.302 103.442-1.087 24.957-5.226 38.52-8.709 47.56-4.629 11.953-10.161 20.488-19.103 29.471-8.941 8.949-17.451 14.531-29.403 19.201-9.009 3.517-22.561 7.714-47.494 8.9-26.998 1.269-35.086 1.56-103.448 1.684-68.338.133-76.424-.124-103.431-1.294zM149.977 1.773c-27.239 1.286-45.843 5.648-62.101 12.019-16.829 6.561-31.095 15.353-45.286 29.603C28.381 57.653 19.655 71.944 13.144 88.79c-6.303 16.299-10.575 34.912-11.778 62.168C.172 178.264-.102 186.973.031 256.489c.133 69.508.439 78.234 1.741 105.548 1.302 27.231 5.649 45.827 12.019 62.092 6.569 16.83 15.353 31.089 29.611 45.289 14.25 14.2 28.55 22.918 45.404 29.438 16.282 6.294 34.902 10.583 62.15 11.777 27.305 1.203 36.022 1.468 105.521 1.336 69.532-.133 78.25-.44 105.555-1.734 27.239-1.302 45.826-5.664 62.1-12.019 16.829-6.585 31.095-15.353 45.288-29.611 14.191-14.251 22.917-28.55 29.428-45.404 6.304-16.282 10.592-34.904 11.777-62.134 1.195-27.323 1.478-36.049 1.344-105.557-.133-69.516-.447-78.225-1.741-105.522-1.294-27.256-5.657-45.844-12.019-62.118-6.577-16.829-15.352-31.08-29.602-45.288-14.25-14.192-28.55-22.935-45.404-29.429-16.29-6.304-34.903-10.6-62.15-11.778C333.747.164 325.03-.101 255.506.031c-69.507.133-78.224.431-105.529 1.742z"
+        />
+      </symbol>
+      <symbol
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 122.88 86.43"
+      >
+        <defs>
+          <style>
+            .cls-1,
+            .cls-2 {
+              fill-rule: evenodd;
+            }
 
-                    .cls-2 {
-                        fill: #fff;
-                    }
-                </style>
-            </defs>
-            <title>black-and-white-youtube</title>
-            <path class="cls-1"
-                d="M121.63,18.65s-1.2-8.47-4.9-12.19c-4.67-4.89-9.91-4.92-12.31-5.21C87.24,0,61.43,0,61.43,0h0s-25.8,0-43,1.25c-2.4.29-7.63.31-12.31,5.21C2.4,10.18,1.22,18.65,1.22,18.65A187.15,187.15,0,0,0,0,38.55v9.31a187.65,187.65,0,0,0,1.22,19.9S2.42,76.23,6.09,80c4.68,4.9,10.82,4.74,13.57,5.26,9.83.94,41.78,1.22,41.78,1.22s25.83,0,43-1.27c2.41-.29,7.64-.32,12.32-5.21,3.69-3.72,4.89-12.2,4.89-12.2a187.15,187.15,0,0,0,1.22-19.9V38.54a189.26,189.26,0,0,0-1.25-19.9Z" />
-            <polygon class="cls-2" points="48.71 59.16 48.71 24.63 81.9 41.95 48.71 59.16 48.71 59.16" />
-        </symbol>
-        <symbol id="mail" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-        </symbol>
-          
+            .cls-2 {
+              fill: #fff;
+            }
+          </style>
+        </defs>
+        <title>black-and-white-youtube</title>
+        <path
+          class="cls-1"
+          d="M121.63,18.65s-1.2-8.47-4.9-12.19c-4.67-4.89-9.91-4.92-12.31-5.21C87.24,0,61.43,0,61.43,0h0s-25.8,0-43,1.25c-2.4.29-7.63.31-12.31,5.21C2.4,10.18,1.22,18.65,1.22,18.65A187.15,187.15,0,0,0,0,38.55v9.31a187.65,187.65,0,0,0,1.22,19.9S2.42,76.23,6.09,80c4.68,4.9,10.82,4.74,13.57,5.26,9.83.94,41.78,1.22,41.78,1.22s25.83,0,43-1.27c2.41-.29,7.64-.32,12.32-5.21,3.69-3.72,4.89-12.2,4.89-12.2a187.15,187.15,0,0,0,1.22-19.9V38.54a189.26,189.26,0,0,0-1.25-19.9Z"
+        />
+        <polygon
+          class="cls-2"
+          points="48.71 59.16 48.71 24.63 81.9 41.95 48.71 59.16 48.71 59.16"
+        />
+      </symbol>
+      <symbol
+        id="mail"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+        />
+      </symbol>
+      <symbol
+        id="bar"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </symbol>
+      <symbol
+        id="search"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+        />
+      </symbol>
+      <symbol
+        id="heart"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+        />
+      </symbol>
+      <symbol
+        id="compare"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+        />
+      </symbol>
+      <symbol id="bag" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+      </symbol>
+      
     </svg>
     <!----------------------------------------------start-header---------------------------------------------->
     <header class="w-screen flex flex-col">
-        <!----------------------------------------------top-header---------------------------------------------->
-        <div class=" bg-black w-full">
-            <div class="container mx-auto border-b-2">
-                <div class=" flex justify-center   w-full h-12  *:w-1/2 *:h-full">
-                    <!----------------------------------------------top-left-header---------------------------------------------->
+      <!----------------------------------------------top-header---------------------------------------------->
+      <div class="bg-black w-full border-b">
+        <div class="container mx-auto">
+          <div class="flex justify-center w-full h-12 *:w-1/2 *:h-full">
+            <!----------------------------------------------top-left-header---------------------------------------------->
 
-                    <div class="*:border-l-2 *:h-full hidden lg:flex">
-                        <div class="w-1/5  justify-center items-center">
-                            <ul class="h-full w-full flex justify-center items-center relative">
-                                <li class="flex justify-evenly items-center h-full w-full group">
-                                    <span class="text-gray-300  hover:text-white text-xs ">
-                                        English
-                                    </span>
-                                    <span>
-                                        <svg class="text-gray-300  hover:text-white w-4 h-4">
-                                            <use href="#arrow-down"></use>
-                                        </svg>
-                                    </span>
-                                    <ul
-                                        class="flex flex-col absolute top-11 left-0 group-hover:border bg-black w-[200%] translate-y-6  group-hover:translate-y-0 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 *:py-2 *:ps-4">
-                                        <li>
-                                            <a class="block" href="#">
-                                                <span class="text-gray-300  hover:text-white text-xs">
-                                                    Deutsch
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="block" href="#">
-                                                <span class="text-gray-300  hover:text-white text-xs">
-                                                    French
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="block" href="#">
-                                                <span class="text-gray-300  hover:text-white text-xs">
-                                                    Requires WPML plugin
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="*:border-l-2 *:h-full hidden lg:flex">
+              <div class="w-1/5 justify-center items-center">
+                <ul
+                  class="h-full w-full flex justify-center items-center relative"
+                >
+                  <li
+                    class="flex justify-evenly items-center h-full w-full group"
+                  >
+                    <span class="text-gray-300 hover:text-white text-xs">
+                      English
+                    </span>
+                    <span>
+                      <svg class="text-gray-300 hover:text-white w-4 h-4">
+                        <use href="#arrow-down"></use>
+                      </svg>
+                    </span>
+                    <ul
+                      class="flex flex-col absolute top-11 left-0 group-hover:border bg-black w-[200%] translate-y-6 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 *:py-2 *:ps-4"
+                    >
+                      <li>
+                        <a class="block" href="#">
+                          <span class="text-gray-300 hover:text-white text-xs">
+                            Deutsch
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="block" href="#">
+                          <span class="text-gray-300 hover:text-white text-xs">
+                            French
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="block" href="#">
+                          <span class="text-gray-300 hover:text-white text-xs">
+                            Requires WPML plugin
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
 
-                        <div class="w-1/5 flex justify-center items-center">
-                            <ul class="h-full w-full flex justify-center items-center relative">
-                                <li class="flex justify-evenly items-center h-full w-full group">
-                                    <span class="text-gray-300  hover:text-white text-xs ">
-                                        Country
-                                    </span>
-                                    <span>
-                                        <svg class="text-gray-300  hover:text-white w-4 h-4">
-                                            <use href="#arrow-down"></use>
-                                        </svg>
-                                    </span>
-                                    <ul
-                                        class="flex flex-col absolute top-11 left-0 group-hover:border bg-black w-[200%] translate-y-6  group-hover:translate-y-0 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 *:py-2 *:ps-4">
-                                        <li>
-                                            <a class="block" href="#">
-                                                <span class="text-gray-300  hover:text-white text-xs">
-                                                    United Stats (USD)
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="block" href="#">
-                                                <span class="text-gray-300  hover:text-white text-xs">
-                                                    Deutschland (EUR)
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="block" href="#">
-                                                <span class="text-gray-300  hover:text-white text-xs">
-                                                    Japan (JPY)
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-3/5 flex justify-start items-center">
-                            <span class="text-gray-300 text-xs">&nbsp; &nbsp; FREE SHIPPING FOR ALL ORDERS OF
-                                $150</span>
-                        </div>
-                    </div>
-                    <!----------------------------------------------top-right-header---------------------------------------------->
-
-                    <div class="flex justify-center *:lg:border-r-2 *:h-full">
-                        <div class="flex items-center justify-evenly w-2/5">
-                            <div>
-                                <a href="">
-                                    <span>
-                                        <svg class="w-5 h-5  fill-blue-500">
-                                            <use href="#facebook"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <span>
-                                        <svg class="w-5 h-5  fill-pink-400">
-                                            <use href="#instagram"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <span>
-                                        <svg class="w-8 h-8 fill-red-600 ">
-                                            <use href="#Layer_1"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <span>
-                                        <svg class="w-6 h-6">
-                                            <use href="#x-twitter"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="hidden lg:flex items-center  w-1/4">
-                            <a class="flex items-center justify-evenly w-full group" href="#">
-                                <span>
-                                    <svg class="text-gray-300 w-4 h-4">
-                                        <use href="#mail"></use>
-                                    </svg>
-                                </span>
-                                <span class="text-gray-300 text-xs group-hover:text-white duration-300">NEWSLETTER</span>
-                            </a>
-                        </div>
-                        <div class="w-1/5 hidden lg:flex items-center">
-                            <a class="flex items-center justify-center w-full group" href="#">
-                                <span class="text-gray-300 text-xs group-hover:text-white duration-300">CONTACT US</span>
-                            </a>
-                        </div>
-                        <div class="w-[15%] hidden lg:flex items-center">
-                                <a class="flex items-center justify-center w-full group" href="#">
-                                    <span class="text-gray-300 text-xs group-hover:text-white duration-300">FAQS</span>
-                                </a>
-                        </div>
-                    </div>
-                </div>
+              <div class="w-1/5 flex justify-center items-center">
+                <ul
+                  class="h-full w-full flex justify-center items-center relative"
+                >
+                  <li
+                    class="flex justify-evenly items-center h-full w-full group"
+                  >
+                    <span class="text-gray-300 hover:text-white text-xs">
+                      Country
+                    </span>
+                    <span>
+                      <svg class="text-gray-300 hover:text-white w-4 h-4">
+                        <use href="#arrow-down"></use>
+                      </svg>
+                    </span>
+                    <ul
+                      class="flex flex-col absolute top-11 left-0 group-hover:border bg-black w-[200%] translate-y-6 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 *:py-2 *:ps-4"
+                    >
+                      <li>
+                        <a class="block" href="#">
+                          <span class="text-gray-300 hover:text-white text-xs">
+                            United Stats (USD)
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="block" href="#">
+                          <span class="text-gray-300 hover:text-white text-xs">
+                            Deutschland (EUR)
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="block" href="#">
+                          <span class="text-gray-300 hover:text-white text-xs">
+                            Japan (JPY)
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-3/5 flex justify-start items-center">
+                <span class="text-gray-300 text-xs"
+                  >&nbsp; &nbsp; FREE SHIPPING FOR ALL ORDERS OF $150</span
+                >
+              </div>
             </div>
+            <!----------------------------------------------top-right-header---------------------------------------------->
+
+            <div class="flex justify-center *:lg:border-r-2 *:h-full">
+              <div
+                class="flex items-center justify-evenly gap-3 sm:gap-0 w-2/5"
+              >
+                <div>
+                  <a href="">
+                    <span>
+                      <svg class="w-5 h-5 fill-blue-500">
+                        <use href="#facebook"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <span>
+                      <svg class="w-5 h-5 fill-pink-400">
+                        <use href="#instagram"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <span>
+                      <svg class="w-8 h-8 fill-red-600">
+                        <use href="#Layer_1"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#x-twitter"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="hidden lg:flex items-center w-1/4">
+                <a
+                  class="flex items-center justify-evenly w-full group"
+                  href="#"
+                >
+                  <span>
+                    <svg class="text-gray-300 w-4 h-4">
+                      <use href="#mail"></use>
+                    </svg>
+                  </span>
+                  <span
+                    class="text-gray-300 text-xs group-hover:text-white duration-300"
+                    >NEWSLETTER</span
+                  >
+                </a>
+              </div>
+              <div class="w-1/5 hidden lg:flex items-center">
+                <a
+                  class="flex items-center justify-center w-full group"
+                  href="#"
+                >
+                  <span
+                    class="text-gray-300 text-xs group-hover:text-white duration-300"
+                    >CONTACT US</span
+                  >
+                </a>
+              </div>
+              <div class="w-[15%] hidden lg:flex items-center">
+                <a
+                  class="flex items-center justify-center w-full group"
+                  href="#"
+                >
+                  <span
+                    class="text-gray-300 text-xs group-hover:text-white duration-300"
+                    >FAQS</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!----------------------------------------------main-header---------------------------------------------->
-        <div></div>
-        <!----------------------------------------------bottom-header---------------------------------------------->
-        <div></div>
+      </div>
+      <!----------------------------------------------main-header---------------------------------------------->
+      <div class="w-full bg-zinc-900 h-32 border-b">
+        <div class="container mx-auto h-full flex justify-betwee items-center">
+          <!----------------------------------------------main-header-bar--------------------------------------------->
+          <div class="flex lg:hidden">
+            <ul>
+              <li>
+                <span>
+                  <svg class="w-10 h-10 text-white">
+                    <use href="#bar"></use>
+                  </svg>
+                </span>
+                <ul></ul>
+                <ul></ul>
+              </li>
+            </ul>
+          </div>
+          <!----------------------------------------------main-header-logo--------------------------------------------->
+          <div class="w-1/5">
+            <figure>
+              <img src="assets/img/wood-logo-white.svg" alt="" />
+            </figure>
+          </div>
+          <!----------------------------------------------main-header-search-box--------------------------------------->
+          <div class="hidden lg:flex w-1/2">
+            <div class="flex-grow flex">
+              <input
+                class="bg-zinc-900 flex-grow text-gray-300 border px-4 py-1 outline-none placeholder:text-gray-300"
+                type="text"
+                placeholder="search for product"
+              />
+            </div>
+            <div>
+              <select
+                class="bg-zinc-900 text-gray-300 border-y px-4 outline-none duration-300 h-full"
+                name=""
+                id=""
+              >
+                <option value="SELECTCATEGURY" selected>SELECTCATEGURY</option>
+                <option value="Clocks">Clocks</option>
+                <option value="Lighting">Lighting</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Accesories">Accesories</option>
+                <option value="Cooking">Cooking</option>
+                <option value="toys">toys</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <button>
+                <span class="flex border px-1 py-1">
+                  <svg class="w-8 h-8 text-gray-300">
+                    <use href="#search"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!----------------------------------------------main-header-login--------------------------------------------->
+          <div class="hidden lg:flex justify-evenly w-[30%]">
+            <div>
+              <a href="#">
+                <span class="text-white text-xs font-bold">
+                  LOGIN/REGISTER
+                </span>
+              </a>
+            </div>
+            <div>
+              <a class="flex" href="#">
+                <span>
+                  <svg class="w-8 h-8 text-white">
+                    <use href="#heart"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a class="flex" href="#">
+                <span>
+                  <svg class="w-8 h-8 text-white">
+                    <use href="#compare"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div>
+                <a class="flex gap-2" href="#">
+                    <span>
+                      <svg class="w-8 h-8 text-white">
+                        <use href="#bag"></use>
+                      </svg>
+                    </span>
+                    <span class="text-white ">$0.00</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------------bottom-header---------------------------------------------->
+      <div></div>
     </header>
     <!----------------------------------------------end-header---------------------------------------------->
-
-</body>
-
+  </body>
 </html>
