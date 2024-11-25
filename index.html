@@ -369,25 +369,131 @@
       </div>
       <!----------------------------------------------main-header---------------------------------------------->
       <div class="w-full bg-zinc-900 h-32 border-b">
-        <div class="container mx-auto h-full flex justify-betwee items-center">
+        <div class="container mx-auto h-full flex justify-evenly lg:justify-betwee items-center lg:gap-3 ">
           <!----------------------------------------------main-header-bar--------------------------------------------->
           <div class="flex lg:hidden">
-            <ul>
+            <ul class="relative">
               <li>
                 <span>
-                  <svg class="w-10 h-10 text-white">
+                  <svg class="w-5 h-5 text-white">
                     <use href="#bar"></use>
                   </svg>
                 </span>
-                <ul></ul>
-                <ul></ul>
+                <!------------------------------- sub-menu --------------------------------->
+                <ul>
+                    <li class="w-36 ps-4 absolute top-16 left-0 bg-zinc-900 text-gray-300">
+                        <span class="text-white">
+                            MENU
+                        </span>
+                        <ul class="w-36 ps-4 absolute top-16 left-0 bg-zinc-900 text-gray-300">
+                            <li>
+                                <a href="#">
+                                    <span>FURNITUR</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>LIGHTING</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>CLOCKS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>ACCESORIES</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>COOKING</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>ELECTRONIC</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>MINIMALISM</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>FASHION</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>TOYS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li >
+                        <span class="text-white">
+                            CATEGURIES
+                        </span>
+                        <ul class="w-36 ps-4 absolute top-16 left-0 bg-zinc-900 text-gray-300">
+                            <li>
+                                <a href="#">
+                                    <span>FURNITUR</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>LIGHTING</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>CLOCKS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>ACCESORIES</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>COOKING</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>ELECTRONIC</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>MINIMALISM</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>FASHION</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>TOYS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
               </li>
             </ul>
           </div>
           <!----------------------------------------------main-header-logo--------------------------------------------->
-          <div class="w-1/5">
+          <div class=" lg:w-1/5 flex justify-center">
             <figure>
-              <img src="assets/img/wood-logo-white.svg" alt="" />
+              <img src="assets/img/wood-logo-white.svg" width="150" alt="" />
             </figure>
           </div>
           <!----------------------------------------------main-header-search-box--------------------------------------->
@@ -426,15 +532,15 @@
             </div>
           </div>
           <!----------------------------------------------main-header-login--------------------------------------------->
-          <div class="hidden lg:flex justify-evenly w-[30%]">
-            <div>
+          <div class="flex justify-evenly lg:w-[30%]">
+            <div class="hidden lg:flex">
               <a href="#">
                 <span class="text-white text-xs font-bold">
                   LOGIN/REGISTER
                 </span>
               </a>
             </div>
-            <div>
+            <div class="hidden lg:flex">
               <a class="flex" href="#">
                 <span>
                   <svg class="w-8 h-8 text-white">
@@ -443,9 +549,9 @@
                 </span>
               </a>
             </div>
-            <div>
+            <div  class="hidden lg:flex">
               <a class="flex" href="#">
-                <span>
+                <span class="relative after:content-['10'] after:w-5 after:h-5 after:bg-red-700 after:top-[-5px] after:right-[-5px] after:absolute after:rounded-full after:text-white after:text-center after:text-xs after:tr">
                   <svg class="w-8 h-8 text-white">
                     <use href="#compare"></use>
                   </svg>
@@ -454,12 +560,12 @@
             </div>
             <div>
                 <a class="flex gap-2" href="#">
-                    <span>
+                    <span class="relative after:content-['5'] after:w-5 after:h-5 after:bg-red-700 after:top-[-5px] after:right-[-5px] after:absolute after:rounded-full after:text-white after:text-center after:text-xs after:tr">
                       <svg class="w-8 h-8 text-white">
                         <use href="#bag"></use>
                       </svg>
                     </span>
-                    <span class="text-white ">$0.00</span>
+                    <span class="text-white hidden lg:flex">$0.00</span>
                   </a>
             </div>
           </div>
