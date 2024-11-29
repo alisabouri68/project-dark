@@ -8,9 +8,20 @@
   <title>dark</title>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-zinc-900">
   <!----------------------------------------------svg-sprit---------------------------------------------->
   <svg class="hidden">
+    <symbol
+        id="github"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+      >
+        <path
+          d="M16,2.345c7.735,0,14,6.265,14,14-.002,6.015-3.839,11.359-9.537,13.282-.7,.14-.963-.298-.963-.665,0-.473,.018-1.978,.018-3.85,0-1.312-.437-2.152-.945-2.59,3.115-.35,6.388-1.54,6.388-6.912,0-1.54-.543-2.783-1.435-3.762,.14-.35,.63-1.785-.14-3.71,0,0-1.173-.385-3.85,1.435-1.12-.315-2.31-.472-3.5-.472s-2.38,.157-3.5,.472c-2.677-1.802-3.85-1.435-3.85-1.435-.77,1.925-.28,3.36-.14,3.71-.892,.98-1.435,2.24-1.435,3.762,0,5.355,3.255,6.563,6.37,6.913-.403,.35-.77,.963-.893,1.872-.805,.368-2.818,.963-4.077-1.155-.263-.42-1.05-1.452-2.152-1.435-1.173,.018-.472,.665,.017,.927,.595,.332,1.277,1.575,1.435,1.978,.28,.787,1.19,2.293,4.707,1.645,0,1.173,.018,2.275,.018,2.607,0,.368-.263,.787-.963,.665-5.719-1.904-9.576-7.255-9.573-13.283,0-7.735,6.265-14,14-14Z"
+        ></path>
+      </symbol>
     <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
       stroke="currentColor" class="size-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -81,7 +92,29 @@
       <path stroke-linecap="round" stroke-linejoin="round"
         d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
     </symbol>
-
+    <symbol
+    id="linkdin"
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+  >
+    <path
+      d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+      fill-rule="evenodd"
+    ></path>
+  </symbol>
+  <symbol
+    id="instagram"
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+  >
+    <path
+      d="M10.202,2.098c-1.49,.07-2.507,.308-3.396,.657-.92,.359-1.7,.84-2.477,1.619-.776,.779-1.254,1.56-1.61,2.481-.345,.891-.578,1.909-.644,3.4-.066,1.49-.08,1.97-.073,5.771s.024,4.278,.096,5.772c.071,1.489,.308,2.506,.657,3.396,.359,.92,.84,1.7,1.619,2.477,.779,.776,1.559,1.253,2.483,1.61,.89,.344,1.909,.579,3.399,.644,1.49,.065,1.97,.08,5.771,.073,3.801-.007,4.279-.024,5.773-.095s2.505-.309,3.395-.657c.92-.36,1.701-.84,2.477-1.62s1.254-1.561,1.609-2.483c.345-.89,.579-1.909,.644-3.398,.065-1.494,.081-1.971,.073-5.773s-.024-4.278-.095-5.771-.308-2.507-.657-3.397c-.36-.92-.84-1.7-1.619-2.477s-1.561-1.254-2.483-1.609c-.891-.345-1.909-.58-3.399-.644s-1.97-.081-5.772-.074-4.278,.024-5.771,.096m.164,25.309c-1.365-.059-2.106-.286-2.6-.476-.654-.252-1.12-.557-1.612-1.044s-.795-.955-1.05-1.608c-.192-.494-.423-1.234-.487-2.599-.069-1.475-.084-1.918-.092-5.656s.006-4.18,.071-5.656c.058-1.364,.286-2.106,.476-2.6,.252-.655,.556-1.12,1.044-1.612s.955-.795,1.608-1.05c.493-.193,1.234-.422,2.598-.487,1.476-.07,1.919-.084,5.656-.092,3.737-.008,4.181,.006,5.658,.071,1.364,.059,2.106,.285,2.599,.476,.654,.252,1.12,.555,1.612,1.044s.795,.954,1.051,1.609c.193,.492,.422,1.232,.486,2.597,.07,1.476,.086,1.919,.093,5.656,.007,3.737-.006,4.181-.071,5.656-.06,1.365-.286,2.106-.476,2.601-.252,.654-.556,1.12-1.045,1.612s-.955,.795-1.608,1.05c-.493,.192-1.234,.422-2.597,.487-1.476,.069-1.919,.084-5.657,.092s-4.18-.007-5.656-.071M21.779,8.517c.002,.928,.755,1.679,1.683,1.677s1.679-.755,1.677-1.683c-.002-.928-.755-1.679-1.683-1.677,0,0,0,0,0,0-.928,.002-1.678,.755-1.677,1.683m-12.967,7.496c.008,3.97,3.232,7.182,7.202,7.174s7.183-3.232,7.176-7.202c-.008-3.97-3.233-7.183-7.203-7.175s-7.182,3.233-7.174,7.203m2.522-.005c-.005-2.577,2.08-4.671,4.658-4.676,2.577-.005,4.671,2.08,4.676,4.658,.005,2.577-2.08,4.671-4.658,4.676-2.577,.005-4.671-2.079-4.676-4.656h0"
+    ></path>
+  </symbol>
   </svg>
   <!----------------------------------------------start-header---------------------------------------------->
   <header class="w-screen flex flex-col">
@@ -240,7 +273,7 @@
     </div>
     <!----------------------------------------------middle-header---------------------------------------------->
     <div class="w-full bg-zinc-900 h-32 border-b">
-      <div class="container mx-auto h-full flex justify-evenly lg:justify-betwee items-center lg:gap-3 ">
+      <div class="container mx-auto h-full flex justify-evenly lg:justify-betwee items-center lg:gap-3">
         <!----------------------------------------------middle-header-bar--------------------------------------------->
         <div class="flex lg:hidden border">
           <ul class="">
@@ -254,7 +287,7 @@
           </ul>
         </div>
         <!----------------------------------------------middle-header-logo--------------------------------------------->
-        <div class=" lg:w-1/5 flex justify-center">
+        <div class="lg:w-1/5 flex justify-center">
           <figure>
             <img src="assets/img/wood-logo-white.svg" width="150" alt="" />
           </figure>
@@ -331,7 +364,7 @@
     </div>
     <!----------------------------------------------bottom-header---------------------------------------------->
     <div class="bg-zinc-900 hidden lg:flex">
-      <div class="container mx-auto flex justify-between">
+      <div class="container mx-auto flex justify-between py-5">
         <!-- bottom-menu -->
         <div class="flex items-center px-2 bg-yellow-600">
           <div class="flex items-center gap-1">
@@ -343,9 +376,7 @@
               </span>
             </div>
             <div class="me-16">
-              <span class="text-white text-sm">
-                BROWSE CATEGORIES
-              </span>
+              <span class="text-white text-sm"> BROWSE CATEGORIES </span>
             </div>
           </div>
           <div>
@@ -359,64 +390,943 @@
         <!-- bottom-nav -->
 
         <div class="flex justify-start items-center ps-2 gap-2 flex-grow">
-          <div><a class="flex items-center" href="#"><span class="text-white text-sm">HOME</span><span><svg
-                  class="w-4 h-4 text-white ">
+          <div>
+            <a class="flex items-center" href="#"><span class="text-white text-sm">HOME</span><span><svg
+                  class="w-4 h-4 text-white">
                   <use href="#arrow-down"></use>
-                </svg></span></a></div>
-          <div><a class="flex items-center" href="#"><span class="text-white text-sm">SHOP</span><span><svg
-                  class="w-4 h-4 text-white ">
+                </svg></span></a>
+          </div>
+          <div>
+            <a class="flex items-center" href="#"><span class="text-white text-sm">SHOP</span><span><svg
+                  class="w-4 h-4 text-white">
                   <use href="#arrow-down"></use>
-                </svg></span></a></div>
-          <div><a class="flex items-center" href="#"><span class="text-white text-sm">BLOG</span><span><svg
-                  class="w-4 h-4 text-white ">
+                </svg></span></a>
+          </div>
+          <div>
+            <a class="flex items-center" href="#"><span class="text-white text-sm">BLOG</span><span><svg
+                  class="w-4 h-4 text-white">
                   <use href="#arrow-down"></use>
-                </svg></span></a></div>
-          <div><a class="flex items-center" href="#"><span class="text-white text-sm">PAGE</span><span><svg
-                  class="w-4 h-4 text-white ">
+                </svg></span></a>
+          </div>
+          <div>
+            <a class="flex items-center" href="#"><span class="text-white text-sm">PAGE</span><span><svg
+                  class="w-4 h-4 text-white">
                   <use href="#arrow-down"></use>
-                </svg></span></a></div>
-          <div><a class="flex items-center" href="#"><span class="text-white text-sm">ELEMENT</span><span><svg
-                  class="w-4 h-4 text-white ">
+                </svg></span></a>
+          </div>
+          <div>
+            <a class="flex items-center" href="#"><span class="text-white text-sm">ELEMENT</span><span><svg
+                  class="w-4 h-4 text-white">
                   <use href="#arrow-down"></use>
-                </svg></span></a></div>
-          <div><a class="flex items-center" href="#"><span class="text-white text-sm">buy</span></a></div>
+                </svg></span></a>
+          </div>
+          <div>
+            <a class="flex items-center" href="#"><span class="text-white text-sm">buy</span></a>
+          </div>
         </div>
         <!-- bottom-right -->
 
-        <div class="flex justify-between items-center gap-4 ">
-          <div><a href="#"><span class="text-white text-sm">SPECIAL OFFER</span></a></div>
+        <div class="flex justify-between items-center gap-4">
+          <div>
+            <a href="#"><span class="text-white text-sm">SPECIAL OFFER</span></a>
+          </div>
           <div class="w-px h-5 bg-white"></div>
-          <div><a href="#"><span class="text-white text-sm">PURCHASE THEME</span></a></div>
+          <div>
+            <a href="#"><span class="text-white text-sm">PURCHASE THEME</span></a>
+          </div>
         </div>
       </div>
     </div>
   </header>
   <!----------------------------------------------end-header---------------------------------------------->
-  <main>
+  <main class="flex flex-col bg-zinc-900 gap-10">
     <!-- start-section-one -->
-    <section class=" bg-zinc-900">
-      <div class="container mx-auto bg-section-one bg-cover bg-center bg-no-repeat flex flex-wrap *:w-full *:lg:w-1/2">
+    <section class="bg-zinc-900">
+      <div
+        class="container mx-auto bg-section-one bg-cover bg-center bg-no-repeat flex flex-wrap py-24 *:w-full *:lg:w-1/2">
         <!-- left-section-one -->
-        <div class="flex flex-col justify-center ps-5 *:w-full *:flex ">
+        <div class="flex flex-col justify-center ps-5 *:w-full *:flex">
           <div>
             <h2 class="text-white text-8xl">wooden lounge chairs.</h2>
           </div>
           <div class="text-gray-300 text-sm">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus provident dolores, maxime at
-              cumque?</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              doloribus provident dolores, maxime at cumque?
+            </p>
           </div>
           <div><span class="text-4xl text-yellow-500">$999,00</span></div>
         </div>
         <!-- right-section-one -->
         <div>
           <figure>
-            <img src="assets/img/sliders-dark-slide-3-image.png" alt="">
+            <img src="assets/img/sliders-dark-slide-3-image.png" alt="" />
           </figure>
         </div>
       </div>
     </section>
     <!-- end-section-one -->
+    <!-- start-section-two -->
+    <section class="bg-zinc-900">
+      <div class="container mx-auto">
+        <div class="flex flex-col items-center gap-2">
+          <div>
+            <h6 class="text-white text-lg">WOODMART COLLECTIONS</h6>
+          </div>
+          <div>
+            <h3 class="text-white text-5xl">FEATURED CATEGORIES</h3>
+          </div>
+          <div>
+            <p class="text-white">
+              WoodMart is a powerful eCommerce theme for WordPress.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap *:flex *:w-full *:lg:w-1/2">
+          <div class="relative overflow-hidden group  p-3">
+            <figure>
+              <img class="group-hover:scale-125 duration-500 object-cover" src="assets/img/dark-cat-23.jpg" alt="" />
+            </figure>
+            <div
+              class="flex flex-col gap-16 absolute top-[90%] left-0 group-hover:top-[88%] group-hover:gap-3 duration-500">
+              <span class="text-white text-4xl">FURNITURE</span>
+              <span class="text-white">33 oroducts</span>
+
+            </div>
+          </div>
+          <div class="flex flex-wrap *:flex *:w-full *:lg:w-1/2">
+            <div class="relative overflow-hidden group  p-3">
+              <figure class="w-full h-full">
+                <img class="group-hover:scale-125 duration-500 object-cover w-full h-full"
+                  src="assets/img/dark-cat-light.jpg" alt="" />
+              </figure>
+              <div
+                class="flex flex-col gap-16 absolute top-[90%] left-2 group-hover:top-[80%] group-hover:gap-3 duration-500">
+                <span class="text-white text-3xl">LIGHTING</span>
+                <span class="text-white">12 poroducts</span>
+
+              </div>
+            </div>
+            <div class="relative overflow-hidden group  p-3">
+              <figure class="w-full h-full">
+                <img class="group-hover:scale-125 duration-500 object-cover w-full h-full"
+                  src="assets/img/dark-cat-toy.jpg" alt="" />
+              </figure>
+              <div
+                class="flex flex-col gap-16 absolute top-[90%] left-2 group-hover:top-[80%] group-hover:gap-3 duration-500">
+                <span class="text-white text-3xl">TOYS</span>
+                <span class="text-white">18 poroducts</span>
+
+              </div>
+            </div>
+            <div class="relative overflow-hidden group  p-3">
+              <figure class="w-full h-full">
+                <img class="group-hover:scale-125 duration-500 object-cover w-full h-full"
+                  src="assets/img/dark-cat-acc.jpg" alt="" />
+              </figure>
+              <div
+                class="flex flex-col gap-16 absolute top-[90%] left-2 group-hover:top-[80%] group-hover:gap-3 duration-500">
+                <span class="text-white text-3xl">ACCESORIES</span>
+                <span class="text-white">33 oroducts</span>
+
+              </div>
+            </div>
+            <div class="relative overflow-hidden group  p-3">
+              <figure class="w-full h-full">
+                <img class="group-hover:scale-125 duration-500 object-cover w-full h-full"
+                  src="assets/img/dark-cat-clock.jpg" alt="" />
+              </figure>
+              <div
+                class="flex flex-col gap-16 absolute top-[90%] left-2 group-hover:top-[80%] group-hover:gap-3 duration-500">
+                <span class="text-white text-3xl">CLOCKS</span>
+                <span class="text-white">33 oroducts</span>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <!-- END-section-two -->
+    <section class="bg-zinc-900">
+      <div class="container mx-auto flex flex-col gap-10">
+        <div class="flex flex-col items-center gap-2">
+          <div>
+            <h6 class="text-white text-lg">WOODMART COLLECTIONS</h6>
+          </div>
+          <div>
+            <h3 class="text-white text-5xl">FEATURED CATEGORIES</h3>
+          </div>
+          <div>
+            <p class="text-white">
+              WoodMart is a powerful eCommerce theme for WordPress.
+            </p>
+          </div>
+        </div>
+        <div class=" flex flex-wrap gap-5 justify-center *:w-full *:lg:w-1/5 *:flex *:flex-col *:gap-3">
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-4.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-1.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-2.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-3.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-5.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-6.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-7.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="relative group">
+            <div style="inset: -15px -15px -150px -15px;"
+              class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+            <div class="overflow-hidden relative group-hover:z-50">
+              <div>
+                <img src="assets/img/dark-products-8.jpg" alt="">
+              </div>
+              <div
+                class="absolute top-[100%] left-0 w-full bg-black flex justify-end px-2 py-2 group-hover:top-[85%] border-y-[1px] border-white duration-300 group-hover:z-50">
+                <svg class="text-white w-10 h-10 ">
+                  <use href="#compare"></use>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center relative group-hover:z-50">
+                <div>
+                  <h6 class="text-white text-lg">Platea parturient</h6>
+                </div>
+                <div><span class="text-gray-300">woodmart</span></div>
+                <div><span class="text-yellow-600 ">999,00</span></div>
+              </div>
+              <div
+                class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4">
+                <div>
+                  <p class="text-white text-sm text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem porro tenetur dolorum
+                    possimus praesentium obcaecati.
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#heart"> </use>
+                    </svg>
+                  </div>
+                  <div>
+                    <button class="bg-yellow-600 py-2 px-4">
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                  <div>
+                    <svg class="text-white w-8 h-8">
+                      <use href="#search"> </use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="container mx-auto flex flex-wrap py-10 *:w-full *:lg:w-1/2 bg-section-two bg-cover bg-center bg-no-repeat">
+        <div>
+          <figure>
+            <img src="assets/img/dark-slider-2-chair.png" alt="">
+          </figure>
+        </div>
+        <div class="flex flex-col gap-5 ps-4">
+          <div><span class="text-gray-300 text-lg capitalize">product landing page</span></div>
+          <div>
+            <h3 class="text-8xl text-white uppercase">vitra chair - classic design.</h3>
+          </div>
+          <div class="flex gap-10">
+            <div class="flex flex-col ">
+              <div><span class="text-gray-300 text-lg font-extrabold py-3 border-b">DESIGNER:</span></div>
+              <div><span class="text-gray-300 text-lg py-4 inline-block">Charies , Ray Eames</span></div>
+            </div>
+            <div class="flex flex-col ">
+              <div><span class="text-gray-300 text-lg font-extrabold py-3 border-b">DESIGNER:</span></div>
+              <div><span class="text-gray-300 text-lg py-4 inline-block">Charies , Ray Eames</span></div>
+            </div>
+            <div class="flex flex-col ">
+              <div><span class="text-gray-300 text-lg font-extrabold py-3 border-b">DESIGNER:</span></div>
+              <div><span class="text-gray-300 text-lg py-4 inline-block">Charies , Ray Eames</span></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div><span class="text-white text-4xl font-bold">$1999.00</span></div>
+            <div>
+              <button class="border bg-transparent py-2  px-4">
+                <span class="text-white text-lg  ">ADD TO CART</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-zinc-900">
+      <div class="container mx-auto flex justify-start py-10 sm:bg-section-three bg-cover bg-center bg-no-repeat">
+        <div class="lg:w-1/2 flex flex-col gap-5 ps-4">
+          <div>
+            <h4 class="text-gray-300 text-xl ">ALL-IN-ONE ECOMMERCE SOLUTION</h4>
+          </div>
+          <div>
+            <h3 class="text-white text-3xl font-bold">ABOUT OUR WOODMART STORE</h3>
+          </div>
+          <div>
+            <p class="text-gray-300 text-lg">Nec adipiscing luctus consequat penatibus parturient massa cubilia etiam a
+              adipiscing enigm dignissim
+              congue egestas sapien a. Scelerisque ac non ut ac bibendum himenaeos ullamcorper justo himenaeos vel a
+              sapien quis.</p>
+          </div>
+          <div class="flex gap-5">
+            <div>
+              <button class="bg-yellow-600 py-2  px-4">
+                <span class="text-white text-lg  ">READ MORE</span>
+              </button>
+            </div>
+            <div>
+              <button class="border bg-transparent py-2  px-4">
+                <span class="text-white text-lg  ">CONTACT US</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-zinc-900 h-64 ">
+      <div class="container mx-auto h-full flex justify-center items-center bg-section-four bg-contain bg-no-repeat">
+        <div class="flex flex-col gap-5">
+          <div>
+            <h4 class="text-white text-3xl font-bold text-center">
+              JOIN OUR NEWSLETTER NOW
+            </h4>
+          </div>
+          <div class="flex">
+            <input class="bg-zinc-900 border border-gray-300 py-2 px-4 flex-grow placeholder:text-sm" type="text"
+              placeholder="Your Email Address">
+            <button class="bg-yellow-600 py-2 px-4 border border-gray-300">
+              <span class="text-white text-lg">
+                SIGN UP
+              </span>
+            </button>
+          </div>
+          <div>
+            <p class="text-white text-xs text-center">
+              Will be used in accordance with our Privacy Policy
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto flex flex-col gap-5">
+        <div class="flex flex-col items-center  gap-2">
+          <div>
+            <h6 class="text-white text-lg">WOODMART COLLECTIONS</h6>
+          </div>
+          <div>
+            <h3 class="text-white text-5xl">FEATURED CATEGORIES</h3>
+          </div>
+          <div>
+            <p class="text-white">
+              WoodMart is a powerful eCommerce theme for WordPress.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-10 *:w-full *:lg:w-1/4">
+          <div class="flex flex-col ">
+            <div class="w-full">
+              <figure class="w-full">
+                <img class="object-cover w-full" src="assets/img/blog-grid-9-388x273.jpg" alt="">
+              </figure>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 bg-black">
+              <div class="flex items-center justify-center">
+                <span class="bg-yellow-600 text-white text-">
+                  DESIGN TRENDS INSPIRATION
+                </span>
+              </div>
+              <div class="flex items-center justify-center">
+                <h6 class="text-white text-2xl text-center">
+                  Creative Water Features and exterior
+                </h6>
+              </div>
+              <div class="flex items-center justify-center">
+                <p class="text-white text-center">
+                  Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
+                  hac et vestibulum duis a tincidunt per a apte...
+                </p>
+              </div>
+              <div class="flex items-center justify-center">
+                <a href="#">
+                  <span class="text-yellow-600">
+                    Continiue Reading
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col ">
+            <div class="w-full">
+              <figure class="w-full">
+                <img class="object-cover w-full" src="assets/img/blog-grid-12-388x273.jpg" alt="">
+              </figure>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 bg-black">
+              <div class="flex items-center justify-center">
+                <span class="bg-yellow-600 text-white text-">
+                  DESIGN TRENDS INSPIRATION
+                </span>
+              </div>
+              <div class="flex items-center justify-center">
+                <h6 class="text-white text-2xl text-center">
+                  Creative Water Features and exterior
+                </h6>
+              </div>
+              <div class="flex items-center justify-center">
+                <p class="text-white text-center">
+                  Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
+                  hac et vestibulum duis a tincidunt per a apte...
+                </p>
+              </div>
+              <div class="flex items-center justify-center">
+                <a href="#">
+                  <span class="text-yellow-600">
+                    Continiue Reading
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col ">
+            <div class="w-full">
+              <figure class="w-full">
+                <img class="object-cover w-full" src="assets/img/blog-grid-13-388x273.jpg" alt="">
+              </figure>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 bg-black">
+              <div class="flex items-center justify-center">
+                <span class="bg-yellow-600 text-white text-">
+                  DESIGN TRENDS INSPIRATION
+                </span>
+              </div>
+              <div class="flex items-center justify-center">
+                <h6 class="text-white text-2xl text-center">
+                  Creative Water Features and exterior
+                </h6>
+              </div>
+              <div class="flex items-center justify-center">
+                <p class="text-white text-center">
+                  Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
+                  hac et vestibulum duis a tincidunt per a apte...
+                </p>
+              </div>
+              <div class="flex items-center justify-center">
+                <a href="#">
+                  <span class="text-yellow-600">
+                    Continiue Reading
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class=" mt-24 w-screen h-screen bg-zinc-900">
+    <div class="container mx-auto flex flex-wrap justify-center *:w-full *:lg:w-1/3  ">
+      <div class="flex flex-wrap items-center *:w-full *:lg:w-1/3">
+        <div >
+          <ul >
+            <li class="flex flex-col gap-10">
+              <span class="text-white text-2xl">
+                Our Stores
+              </span>
+              <ul class="flex flex-col gap-5">
+                <li><a href="#"><span class="text-gray-300 text-sm">New York</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">London SF</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Edinburgh</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Los Angeles</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Chicago</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Las Vegas</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="flex flex-col gap-10">
+              <span class="text-white text-2xl">
+                Useful Links
+              </span>
+              <ul class="flex flex-col gap-5">
+                <li><a href="#"><span class="text-gray-300 text-sm">Privacy Policy</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Returns</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Terms & Conditions</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Contact Us</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Latest News</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Our Sitemap</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="flex flex-col gap-10">
+              <span class="text-white text-2xl">
+                Footer Menu
+              </span>
+              <ul class="flex flex-col gap-5">
+                <li><a href="#"><span class="text-gray-300 text-sm">Instagram profile</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">New Collection</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Woman Dress</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Contact Us</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Latest News</span></a></li>
+                <li><a href="#"><span class="text-gray-300 text-sm">Purchase Theme</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="relative group h-1/2">
+        <div style="inset: -15px -15px -150px -15px;"
+          class="absolute bg-black scale-0 group-hover:scale-100 duration-300 group-hover:z-10"></div>
+
+        <div class="overflow-hidden relative group-hover:z-50">
+          <div>
+            <img src="assets/img/photo_2024-11-09_00-15-04.jpg" alt="">
+          </div>
+          <div
+            class="absolute top-[100%] left-0 w-full py-4 bg-black flex justify-center px-2 group-hover:top-[88%] border-y-[1px] border-white duration-300 group-hover:z-50">
+          <h1 class="text-white text-3xl">developed by Ali Emami Sabouri</h1>
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col items-center relative group-hover:z-50">
+            <div>
+              <h6 class="text-white text-lg">HTML</h6>
+            </div>
+            <div><span class="text-gray-300">css</span></div>
+            <div><span class="text-gray-300 ">tailwindcss</span></div>
+          </div>
+          <div
+            class="flex flex-col absolute group-hover:z-50 opacity-0 group-hover:opacity-100 group-hover:duration-700 gap-4 w-full">
+            <div>
+              <p class="text-white text-lg text-center">
+                hi, I am Ali Emami Sabouri, a web developer
+              </p>
+            </div>
+            <div class="flex justify-center gap-5">
+              <div>
+                <a
+                href="https://www.instagram.com/alies_7568/profilecard/?igsh=MTV6NXZzZDNxdzNreQ=="
+              >
+                <span>
+                  <svg
+                    style="width: 2rem; height: 2rem"
+                    class="fill-yellow-500 hover:fill-yellow-200"
+                  >
+                    <use href="#instagram"></use>
+                  </svg>
+                </span>
+              </a>
+              </div>
+              <div>
+                <a href="https://github.com/alisabouri68">
+                  <span>
+                    <svg
+                      class="fill-yellow-500 hover:fill-yellow-200"
+                      style="width: 3rem; height: 3rem"
+                    >
+                      <use href="#github"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div>
+                <a
+                href="https://www.linkedin.com/in/ali-emami-aa9885315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >
+                <span>
+                  <svg
+                    style="width: 3rem; height: 3rem"
+                    class="fill-yellow-500 hover:fill-yellow-200"
+                  >
+                    <use href="#linkdin"></use>
+                  </svg>
+                </span>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
